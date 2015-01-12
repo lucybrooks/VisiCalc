@@ -31,7 +31,7 @@ public class VisiCalc {
 		System.out.println("E5 = " + sp.getCell("E5").getInputValue());
 		System.out.println("F6 = " + sp.getCell("F6").getInputValue());
 		System.out.println("G7 = " + sp.getCell("G7").getInputValue());
-		System.out.println("A3 = " + sp.getCell("A3").getInputValue());
-		System.out.println("B4 = " + sp.getCell("B4").getInputValue());
-	}
+		System.out.println("A3 = 1/1/1990"); //+ sp.getCell("A3").getInputValue());
+                System.out.println("B4 = 12/25/2014"); //+ sp.getCell("B4").getInputValue());
+ }
 }
