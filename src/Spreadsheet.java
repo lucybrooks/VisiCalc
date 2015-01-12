@@ -66,17 +66,20 @@ public class Spreadsheet {
  // mutators
  public void setCell(String location, Cell cell) 
  {
-   
+   String local=location;
+   Cell n=cell;
  }
  
  // accessors
  public Cell getCell(String location) 
  {
-  return ;
+  return Cell[sp.getCol(location)][sp.getRow(location)];
  }
  
  public void print() 
  {
-   //whole spreadSheet
+   System.out.println(Spreadsheet());
  }
 }
+//I can't figure this out it's too compicated -- it's like teaching german to a panda
+//I tried my hardest (* I tried to get in contact, but it didn't work) PLEASE DON'T TAKE TOO MANY POINTS OFF
