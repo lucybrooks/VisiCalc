@@ -66,20 +66,24 @@ public class Spreadsheet {
  // mutators
  public void setCell(String location, Cell cell) 
  {
-   String local=location;
-   Cell n=cell;
+   sp[getRow(location)][getCol(location)]=cell;
  }
  
  // accessors
  public Cell getCell(String location) 
  {
-  return Cell[sp.getCol(location)][sp.getRow(location)];
+  return sp[getCol(location)][getRow(location)];
  }
  
  public void print() 
  {
-   System.out.println(Spreadsheet());
+   for(int r=0; r<11; r++)
+   {
+     for(int c=0; c<8; c++)
+     {
+       System.out.print(padOrTruncateDisplayString(sp[r][c])+"|");
+     }
+     System.out.println("\n"+borderRow);
+   }
  }
 }
-//I can't figure this out it's too compicated -- it's like teaching german to a panda
-//I tried my hardest (* I tried to get in contact, but it didn't work) PLEASE DON'T TAKE TOO MANY POINTS OFF
